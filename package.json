@@ -1,0 +1,51 @@
+{
+  "version": "0.0.2",
+  "name": "rlib-scaff",
+  "description": "React library scaffolding",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "npm run storybook",
+    "clean": "rimraf dist",
+    "watch": "parcel watch",
+    "build": "npm run clean && parcel build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "@fluentui/react-components": "^9.28.0",
+    "@fluentui/react-icons": "^2.0.209",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.9.3",
+    "@parcel/transformer-typescript-types": "^2.9.3",
+    "@storybook/addon-essentials": "^7.2.2",
+    "@storybook/addon-interactions": "^7.2.2",
+    "@storybook/addon-links": "^7.2.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.2",
+    "@storybook/react": "^7.2.2",
+    "@storybook/react-vite": "^7.2.2",
+    "@storybook/testing-library": "^0.2.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "storybook": "^7.2.2",
+    "storybook-dark-mode": "^3.0.1",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "license": "MIT"
+}

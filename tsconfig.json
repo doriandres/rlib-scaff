@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "NodeNext",
+        "target": "ESNext",
+        "pretty": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "skipLibCheck": true        
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "**/*.test.ts",        
+        "**/*.stories.ts",        
+        "dist"        
+    ]
+}
